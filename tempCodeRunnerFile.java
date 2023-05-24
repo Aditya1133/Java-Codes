@@ -1,16 +1,20 @@
 import java.util.*;
-public class LinkedList4{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        LinkedList<Integer> ll= new LinkedList<Integer>();
-        for(int i=0;i<n;i++){
-            ll.add(sc.nextInt());
+public class Functions{
+    public static void power(int x,int num){
+        int i=1,mul=x;
+        for(i=1;i>=num;i++){
+            mul*=x;
         }
-        int len=ll.size();
-        int d=len/2;
-        ll.remove(d);
-        int z=sc.nextInt();
-        ll.add(z);
+        System.out.print("The base of the number "+x+" and power"+num+" is:-"+mul);
+
+    }
+    public static void main(String arg[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the number base:- ");
+        int x=sc.nextInt();
+        System.out.print("Enter the number power:- ");
+        int num=sc.nextInt();
+        power(x,num);
+
     }
 }
