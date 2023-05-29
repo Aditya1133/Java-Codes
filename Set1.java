@@ -13,7 +13,7 @@ public class Set1{
         ArrayList<Integer> arr2 =new ArrayList<Integer>();
 
         for(int i=0;i<x;i++){
-            arr.add(sc.nextInt());
+            arr2.add(sc.nextInt());
 
         }
         Set<Integer> a=new HashSet<Integer>(arr);
