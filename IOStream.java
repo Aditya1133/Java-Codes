@@ -21,13 +21,17 @@ public class IOStream{
             FileInputStream fin=new FileInputStream("Aditya.txt");
             int i=fin.read();
             System.out.println((char)i);
-            int k=0;    
+            int k=0; 
+            System.out.println((char)(fin.read()));
+            System.out.println((char)(fin.read()));  
+            System.out.println((char)(fin.read()));  
+            System.out.println((char)(fin.read())); 
+            System.out.println((char)(fin.read())); 
             while((k=fin.read())!=-1){
                 System.out.print((char)k);
             }
             fin.close();
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.print(e);
 
         }
